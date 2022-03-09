@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.63a26457.svg" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Calculadora Matrizes</title>
+		<script type="module" crossorigin src="/assets/index.a19f4562.js"></script>
+		<link rel="modulepreload" href="/assets/vendor.6acc096e.js">
+		<link rel="stylesheet" href="/assets/index.b46d7b09.css">
+	</head>
+	<body>
+		<header>
+			<h1>Calculadora de Matrizes</h1>
+			<article>
+				<button id="buttonRow">Adicionar Linha</button>
+				<button id="buttonCollumn">Adicionar Coluna</button>
+				<button id="switch">Calcular Determinante</button>
+			</article>
+		</header>
+		<main>
+			<div id="left" class="side">
+				<div class="row">
+					<input type="number" />
+				</div>
+			</div>
+			<select name="operation" id="operation">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<div id="right" class="side">
+				<div class="row">
+					<input type="number" />
+				</div>
+			</div>
+		</main>
+		<section class="invisible">
+			<div id="full">
+				<div class="row">
+					<input type="number" />
+					<input type="number" />
+				</div>
+				<div class="row">
+					<input type="number" />
+					<input type="number" />
+				</div>
+			</div>
+		</section>
+		<article>
+			<button id="calculate">Calcular</button>
+			<button id="clear">Resetar Matrizes</button>
+		</article>
+		<div class="popup">
+			<div class="popup-box">
+				<button class="close-button" id="closeButton">
+					<img src="/assets/close.46ba4e90.svg" alt="close" />
+				</button>
+				<p class="popup-text" id="popupText"></p>
+			</div>
+		</div>
+	</body>
+</html>
